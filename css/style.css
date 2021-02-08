@@ -5,7 +5,7 @@ body{
 /* Header */
 
 #top_header{
-    padding: 20px 0px;
+    padding: 40px 00px;
     width: 100%;
     position: fixed;
     z-index: 10;
@@ -17,7 +17,7 @@ body{
     margin: 0 auto;
 }
 #logo{
-    width: 23%;
+    width: 100px;
 }
 #top_header nav{
     font-size: 12px;
@@ -28,12 +28,15 @@ body{
     vertical-align: bottom;
 }
 #top_header nav li a{
-    margin-left: 20px;
+    margin-left: 30px;
 
 }
 #top_header nav a{
     text-decoration: none;
     color: #000;
+}
+nav{
+    padding: 0;
 }
 #hamburger{
     font-size: 30px;
