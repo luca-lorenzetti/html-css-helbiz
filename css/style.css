@@ -3,10 +3,13 @@ body{
 }
 
 /* Header */
+
 #top_header{
-    margin: 30px 0;
-    height: 90px;  
-    vertical-align: middle;
+    padding: 20px 0px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    background-color: #fff;
 }
 
 #logo{
@@ -15,6 +18,10 @@ body{
 #top_header nav{
     font-size: 10px;
     font-weight: 600;
+}
+#top_header nav ul{
+    padding-top: 5px;
+    vertical-align: bottom;
 }
 #top_header nav li{
     margin-right: 15px;
@@ -45,5 +52,20 @@ body{
     margin-left: 10px;
     font-weight: bold;
     font-size: 14px;
-    vertical-align: top;
+}
+
+/* Hero */
+
+#hero{
+    background-image: url("../img/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    padding-top: 150px;
+    height: 130vh;
+}
+
+h1{
+    font-size: 80px;
+    font-weight: bold;
 }
