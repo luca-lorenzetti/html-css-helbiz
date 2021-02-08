@@ -20,7 +20,7 @@ body{
     width: 23%;
 }
 #top_header nav{
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 600;
 }
 #top_header nav ul{
@@ -35,7 +35,11 @@ body{
     text-decoration: none;
     color: #000;
 }
-
+#hamburger{
+    font-size: 30px;
+    position: relative;
+    padding-left: 150px;
+}
 #languages{
     background-color: transparent;
     border: solid 1px grey;
@@ -62,17 +66,17 @@ body{
 /* Hero */
 
 #hero{
-    background-image: url("../img/hero.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: bottom;
-    padding-top: 110px;
+    padding-top: 130px;
     min-height: 85vh;
-    width: 70%;;
+    width: 100%;
+    text-align: center;
 }
+#hero img{
+    width: 73%;
 
+}
 h1{
-    font-size: 110px;
+    font-size: 120px;
     font-weight: bold;
     font-family: neue-haas-grotesk-display,sans-serif;
 }
@@ -80,31 +84,26 @@ h1{
 #cards{
     margin-top: 150px;
 }
-#cards::after{
-    display: table;
-    content: '';
-    clear: both;
-}
+
 .card{
     background-color: #fafafa;
-    width: calc( (100%/3) - 60px);
-    padding: 100px 0px;
+    padding: 100px 80px;
     text-align: center;
-    float: left;
-    margin: 0 30px;
-
+    border: 30px solid white;
 }
+
 .card > h2{
     font-weight: normal;
     font-size: 20px;
     margin: 40px 0px;
     padding: 0 50px;
 }
-.card > img:first-child{
+.img_card{
     width: 70%
 }
 .card > img:last-child{
-    height: 400px;
+    max-height: 400px;
+    min-width: 100%;
 }
 .card > a{
     display: inline-block;
@@ -116,4 +115,50 @@ h1{
     font-weight: lighter;
     font-size: 18px;
     height: 5px;
+}
+
+/* Smartphone section */
+#smartphone_section{
+    background-image: url("../img/banner.jpg");
+    background-repeat: no-repeat;
+    padding-top: 13%;
+}
+#smartphone_section .left,
+#smartphone_section .right{
+    padding-top: 450px;
+}
+#smartphone_section .left h2{
+    font-weight: bold;
+    font-size: 40px;
+}
+#smartphone_section .right h3{
+    font-weight: bold;
+}
+#smartphone_section .right p{
+    font-size: 20px;
+}
+#smartphone_section .right{
+    padding-left: 100px;
+}
+#smartphone_section .row{
+    position: relative;
+    top: 15%;
+}
+
+#iphone > img{
+    height: 700px;
+    background-image: url("https://helbiz.com/_nuxt/img/slide1.8ebdcb8.jpg");
+    background-size: 90% 95%;
+    background-repeat: no-repeat;
+    background-position: 20px 15px;
+    overflow: hidden;
+}
+@media screen and (max-width: 991px){
+    
+        .img_card{
+            width: auto;
+        }
+        #smartphone_section .left,#smartphone_section .right{
+            padding: 20px 40px;
+        }
 }

@@ -8,7 +8,8 @@
         <!-- CDN FONTAWESOME -->
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
         <!-- CDN BOOTSTRAP 3.3.7 -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">      
         <!-- MY STYLE -->
         <link rel="stylesheet" href="css/style.css"
         >
@@ -26,8 +27,9 @@
                             <a href=""><img  id="logo" src="img/logo.svg" alt="logo"></a> 
                         </div>
                         <div class="col-xs-7 col-xs-offset-1">
-                                <nav class="col-xs-8  text-right">
-                                    <ul class="list-inline text-uppercase">
+                                <nav class="col-xs-12 col-sm-8 text-right">
+                                    <a id="hamburger" class=" hidden-lg col-xs-2 col-xs-offset-12" href=""><i class="fas fa-bars"></i></a>
+                                    <ul class="list-inline text-uppercase visible-lg">
                                         <li><a href="">mobilità</a> </li>
                                         <li><a href="">helbiz kitchen</a></li>
                                         <li><a href="">my helbiz</a></li>
@@ -35,7 +37,7 @@
                                         <li><a href="">chi siamo</a></li>
                                     </ul>
                                 </nav> 
-                                    <div class="col-xs-4">
+                                    <div class="col-sm-3 visible-lg text-right">
                                         <button id="languages" type="button" class="text-uppercase">ita <i class="fas fa-angle-down"></i></button>
                                         <button id="login" type="button">Login</button> 
                                     </div>
@@ -48,35 +50,63 @@
             <!-- Hero -->
             <div id="hero" class="container_80">
                 <h1 class=" col-xs-12 text-center text-nowrap">La mobilità del futuro</h1>
+                <img src="img/hero.jpg" alt="hero">
             </div>
             <!-- /Hero -->
-
+        </header>
+        
             <!-- Cards Section -->
             <section id="cards">
                 <div class="container_80">
-                    <div class="card">
-                        <img src="img/helbiz-go.svg" alt="helbiz-go">
-                        <h2>La mobilità in sharing senza interruzioni</h2>
-                        <a href="">Per saperne di più <i class="fas fa-angle-right"></i> </a>
-                        <img src="img/helbizgo.png" alt="">
+                    <div class="row">
+                        <div class="card col-xs-12 col-lg-4 ">
+                            <img src="img/helbiz-go.svg" alt="helbiz-go">
+                            <h2 class="">La mobilità in sharing senza interruzioni</h2>
+                            <a class="col-xs-12" href="">Per saperne di più <i class="fas fa-angle-right"></i> </a>
+                            <img class="img_card" src="img/helbizgo.png" alt="">
+                        </div>
+                        <div class="card col-xs-12 col-lg-4">
+                            <img src="img/helbiz-bike.svg" alt="helbiz-bike">
+                            <h2>La nuova generazione di biciclette elettriche da città.</h2>
+                            <a class="col-xs-12" href="">Per saperne di più <i class="fas fa-angle-right"></i> </a>
+                            <img class="img_card" src="img/helbizbike.png" alt="">
+                        </div>
+                        <div class="card col-xs-12 col-lg-4">
+                            <img src="img/helbiz-moped.svg" alt="helbiz-moped">
+                            <h2>Condivisione di scooter elettrici per i viaggi più lunghi</h2>
+                            <a class="col-xs-12" href="">Per saperne di più <i class="fas fa-angle-right"></i> </a>
+                            <img class="img_card" src="img/helbizmoped.png" alt="">
+                        </div>
                     </div>
-                    <div class="card">
-                        <img src="img/helbiz-bike.svg" alt="helbiz-bike">
-                        <h2>La nuova generazione di biciclette elettriche da città.</h2>
-                        <a href="">Per saperne di più <i class="fas fa-angle-right"></i> </a>
-                        <img src="img/helbizbike.png" alt="">
-                    </div>
-                    <div class="card">
-                        <img src="img/helbiz-moped.svg" alt="helbiz-moped">
-                        <h2>Condivisione di scooter elettrici per i viaggi più lunghi</h2>
-                        <a href="">Per saperne di più <i class="fas fa-angle-right"></i> </a>
-                        <img src="img/helbizmoped.png" alt="">
-                    </div>
+                    
                 </div>
 
             </section>
             <!-- /Cards Section -->
 
-        </header>
+            <!-- Smartphone section -->
+            <section id="smartphone_section" class="text-center">
+    
+                <!-- <div id="banner"> <img src="img/banner.jpg" alt=""></div> -->
+                <div class="container">
+                    <div class="row">
+                        <div id="iphone" class="cols-xs-12  col-sm-push-4 col-sm-4">
+                            <img src="img/iphone.png" alt="">
+                        </div>
+                        <div class="left cols-xs-12 col-sm-pull-4 col-sm-4 text-left">
+                            <h2>Come funziona
+                                Helbiz?</h2>
+                        </div>
+                        <div class="right cols-xs-12 col-sm-4 text-left">
+                            <h3>Step 1</h3>
+                            <p>Trova il mezzo più vicino a te</p>
+                        </div>
+                    </div>
+                </div>
+        
+            
+            </section>
+            <!-- /Smartphone section -->
+
     </body>
 </html>
