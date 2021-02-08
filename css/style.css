@@ -28,7 +28,7 @@ body{
     vertical-align: bottom;
 }
 #top_header nav li a{
-    margin-left: 30px;
+    margin-right: 20px;
 
 }
 #top_header nav a{
@@ -90,7 +90,8 @@ h1{
 
 .card{
     background-color: #fafafa;
-    padding: 100px 80px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     text-align: center;
     border: 30px solid white;
 }
@@ -102,7 +103,8 @@ h1{
     padding: 0 50px;
 }
 .img_card{
-    width: 70%
+    width: 60%;
+    height: 60%;
 }
 .card > img:last-child{
     max-height: 400px;
@@ -124,7 +126,10 @@ h1{
 #smartphone_section{
     background-image: url("../img/banner.jpg");
     background-repeat: no-repeat;
-    padding-top: 13%;
+    height: 75vh;
+    background-size: cover;
+    background-position: top;  
+    padding-top: 150px;  
 }
 #smartphone_section .left,
 #smartphone_section .right{
@@ -154,7 +159,6 @@ h1{
     background-size: 90% 95%;
     background-repeat: no-repeat;
     background-position: 20px 15px;
-    overflow: hidden;
 }
 @media screen and (max-width: 991px){
     
@@ -164,4 +168,9 @@ h1{
         #smartphone_section .left,#smartphone_section .right{
             padding: 20px 40px;
         }
+        #iphone > img{
+            height: 450px;
+            background-position: 10px 15px;
+        }
+        
 }
